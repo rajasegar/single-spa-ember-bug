@@ -7,11 +7,11 @@ I'm trying to migrate an older ember application so I wanted to use Single-spa t
 ## What am I seeing
 When I hit my ember url path I see my &lt;script&gt; tag for my ember-quickstart.js and vendor.js load but the ember app does not start.
 
-I'm using the default [ember new ember-quickstart](link:https://guides.emberjs.com/release/getting-started/quick-start/) as a test ember app that is known to work.
+I'm using the default [ember new ember-quickstart](https://guides.emberjs.com/release/getting-started/quick-start/) as a test ember app that is known to work.
 
 ## What am I doing.
 In my ember app I'm following the instruction [in the Ecosystem ember section](https://single-spa.js.org/docs/ecosystem-ember)
-I've uddate my `src/ember-quickstart/app/app.js` with the lifecycle methods.
+I've updated my `src/ember-quickstart/app/app.js` with the lifecycle methods.
 I added single spa ember to `src/ember-quickstart/ember-cli-build.js`
 Registered single spa ember `src/root-application/single-spa-config.js`
 
