@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "webpack-dev-server --open",
     "install-ember":"cd src/ember-quickstart && yarn",
-    "build": "cd src/ember-quickstart && ember build && cd ../../ && webpack --config webpack.config.js -p"
+    "build": "webpack --config webpack.config.js -p"
   },
   "keywords": [],
   "author": "",

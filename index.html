@@ -12,7 +12,7 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "root-config": "http://localhost:8081/root-application.js"
+        "root-config": "http://localhost:8080/root-application.js"
       }
     }
   </script>
@@ -26,6 +26,13 @@
     System.import('root-config');
   </script>
   Hello World  single spa online!
+  <p>
+  <a href="/">Home</a>
+  <a href="/ember">Ember</a>
+  <a href="/ember#/about">About</a>
+  <a href="/ember#/contact">Contact</a>
+  </p> 
+  <div id="ember-app"></div>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 </body>
 </html>

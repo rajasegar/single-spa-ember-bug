@@ -4,6 +4,7 @@ import loadInitializers from 'ember-load-initializers';
 import config from 'ember-quickstart/config/environment';
 
 export default class App extends Application {
+  rootElement = '#ember-app';
   modulePrefix = config.modulePrefix;
   podModulePrefix = config.podModulePrefix;
   Resolver = Resolver;
