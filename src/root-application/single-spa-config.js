@@ -1,7 +1,8 @@
 // root-application.js
-import * as singleSpa from 'single-spa';
+import { registerApplication, start } from 'single-spa';
 import {loadEmberApp} from 'single-spa-ember';
-singleSpa.registerApplication('ember-quickstart', loadingFunction, activityFunction);
+registerApplication('ember-quickstart', loadingFunction, activityFunction);
+
 
 function activityFunction(location) {
   // Only render the ember app when the url hash starts with ember
@@ -14,3 +15,5 @@ function loadingFunction() {
   const vendorUrl = '/vendor.js'; // Optional if you have one vendor bundle used for many different ember apps
   return loadEmberApp(appName, appUrl, vendorUrl);
 }
+
+start();
